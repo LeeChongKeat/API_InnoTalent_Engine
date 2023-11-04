@@ -1,0 +1,11 @@
+{
+  "OpenAI": {
+    "key": "xxxxxxx"
+  },
+    "database": {
+        "host": "localhost",
+        "user": "username",
+        "password": "password",
+        "database_name": "dbname"
+    }
+}
