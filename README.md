@@ -10,8 +10,8 @@ __Which are:__
 1. OpenAI ChatGPT 
 2. Resignation Intention AI - https://github.com/LeeChongKeat/Resignation_Intention_Prediction
 3. Salary AI - https://github.com/LeeChongKeat/Salary_Prediction
-4. Employee Rating AI (Return on Work) - https://github.com/LeeChongKeat/Employee_Personal_Rating_Prediction
-5. Work Performance - https://github.com/LeeChongKeat/Work_Performance_Prediction
+4. Employee Rating AI - https://github.com/LeeChongKeat/Employee_Personal_Rating_Prediction
+5. Work Performance (Return on Work) - https://github.com/LeeChongKeat/Work_Performance_Prediction
 
 Based on these evaluations, it provides an overall score to determine if a candidate is the right fit for the company.
 
@@ -48,6 +48,7 @@ AI-Powered Talent Dashboard Report, evaluate the candidate resume based on five 
 2. Change the Config.json file (OpenAI Key and Database)
 3. Python command start the API python main.py
 
+
 ## API
 1. [POST] api/InnoTalent/SubmitApplication : Upload the Resume PDF File
 2. [GET] api/InnoTalent/Get/{Talent_Id} : Get the Talent's Overall Score
@@ -56,13 +57,18 @@ AI-Powered Talent Dashboard Report, evaluate the candidate resume based on five 
 ## GET api/InnoTalent/Get/{Talent_Id} : Return
 talent_results = {
         "talent_id": talent_id,
-        "pre_rating": Return on Work ROW value (Max 100): decimal,
-        "pre_performance": Return working performance %: decimal,
+        "pre_rating": Return on talent matching rate: decimal,
+        "pre_performance": Return working performance (Work ROW value) %: decimal,
         "pre_salary": Return talent satisfaction salary: decimal ,
         "pre_salary_next_three_year": Return next 3 years talent satisfaction salary: decimal list,
         "pre_return_next_three_year": Return next 3 years talent ROW: decimal list,
-        "next_interview_percentage": Return performance: decimal,
+        "next_interview_percentage": Return rate performance: decimal,
         "pre_resign_intention_next_three_year": Return next 3 years resign intention percentage: decimal lis
     }
+
+## Contact
+Name: Ts. Lee Chong Keat - jerry_keat@hotmail.com
+
+Project Link: [https://github.com/LeeChongKeat/API_InnoTalent_Engine](https://github.com/LeeChongKeat/API_InnoTalent_Engine)
 
 
