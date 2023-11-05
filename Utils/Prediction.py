@@ -24,5 +24,12 @@ def predict_rating(role_id, skill_set, development, culture, outstanding, attitu
     predicted_rating = model.predict(input_data)
     return predicted_rating[0][0]
 
+def predict_resign_intention(working_year, salary, culture):
+    model = load_model('../AIModel/resign_intention_model.h5')
+    nor_culture = normalize(culture)
+    input_data = np.array([[working_year, salary, nor_culture]])
+    predicted_rating = model.predict(input_data)
+    return predicted_rating[0][0]
+
 def normalize(value):
     return value / 5
