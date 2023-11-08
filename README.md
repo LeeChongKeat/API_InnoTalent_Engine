@@ -55,16 +55,38 @@ AI-Powered Talent Dashboard Report, evaluate the candidate resume based on five 
 
 
 ## GET api/InnoTalent/Get/{Talent_Id} : Return
+
 talent_results = {
+
         "talent_id": talent_id,
+        
         "pre_rating": Return on talent matching rate: decimal,
+        
         "pre_performance": Return working performance (Work ROW value) %: decimal,
+        
         "pre_salary": Return talent satisfaction salary: decimal ,
-        "pre_salary_next_three_year": Return next 3 years talent satisfaction salary: decimal list,
-        "pre_return_next_three_year": Return next 3 years talent ROW: decimal list,
+        
+        "pre_salary_next_five_year": Return next 5 years talent satisfaction salary: decimal list,
+        
+        "pre_return_next_five_year": Return next 5 years talent ROW: decimal list,
+        
         "next_interview_percentage": Return rate performance: decimal,
-        "pre_resign_intention_next_three_year": Return next 3 years resign intention percentage: decimal lis
+        
+        "pre_resign_intention_next_five_year": Return next 5 years resign intention percentage: decimal list
+        
     }
+
+
+## DevHack 2023 Google Developer Groups George Town
+Team: (3A)th Industrial
+
+Member 1 : Ts. Lee Chong Keat jerry_keat@hotmail.com
+
+Member 2 : Teng Jun Siong junsiong2599@gmail.com
+
+Member 3 : Teoh Chun Keat chunkeatteoh99@gmail.com
+
+
 
 ## Contact
 Name: Ts. Lee Chong Keat - jerry_keat@hotmail.com
