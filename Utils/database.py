@@ -67,7 +67,7 @@ def get_department_skill_requirements(role_id):
     cursor = connection.cursor()
     query = ("SELECT skill "
              "FROM skill_requirements "
-             "WHERE id = %s")
+             "WHERE role_id = %s")
     cursor.execute(query, role_id)
     data = cursor.fetchall()
     connection.close()

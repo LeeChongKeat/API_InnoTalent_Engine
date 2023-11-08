@@ -7,24 +7,24 @@ def get_talent(talent_id):
                                 result["culture"], result["outstanding"], result["attitude"])
     pre_performance = predict_performance(pre_rating)
     pre_salary = predict_salary(pre_performance, result["role_id"], result["working_year"])
-    pre_salary_next_three_year = []
-    pre_resign_intention_next_three_year = []
-    pre_return_next_three_year = [pre_performance, pre_performance, pre_performance]
+    pre_salary_next_five_year = []
+    pre_resign_intention_next_five_year = []
+    pre_return_next_five_year = [pre_performance, pre_performance, pre_performance]
 
-    for i in range(1, 4):
+    for i in range(1, 6):
         next_salary = predict_salary(pre_performance, result["role_id"], result["working_year"]+i)
-        pre_salary_next_three_year.append(next_salary)
-        pre_resign_intention_next_three_year.append(predict_resign_intention(result["working_year"]+i, next_salary, 3))
+        pre_salary_next_five_year.append(next_salary)
+        pre_resign_intention_next_five_year.append(predict_resign_intention(result["working_year"]+i, next_salary, 3))
 
     talent_results = {
         "talent_id": talent_id,
         "pre_rating": pre_rating,
         "pre_performance": pre_performance,
         "pre_salary": pre_salary,
-        "pre_salary_next_three_year": pre_salary_next_three_year,
-        "pre_return_next_three_year": pre_return_next_three_year,
+        "pre_salary_next_three_year": pre_salary_next_five_year,
+        "pre_return_next_three_year": pre_return_next_five_year,
         "next_interview_percentage": get_next_interview_percentage(pre_performance),
-        "pre_resign_intention_next_three_year": pre_resign_intention_next_three_year
+        "pre_resign_intention_next_three_year": pre_resign_intention_next_five_year
     }
 
     return talent_results

@@ -25,7 +25,7 @@ def match_resume_development_percentage(resume_text):
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=f"In the provided paragraph ({resume_text}), identify the latest education background, "
-               f"any professional background, competitions, and events. Assign a rating of 10 points for a bachelor's "
+               f"any professional background. Assign a rating of 10 points for a bachelor's "
                f"degree, 20 points for a master's degree, and 40 points for a Ph.D. For each identified professional "
                f"background, assign 20 points. For any course study entry,assign 10 points. Finally, calculate the "
                f"total points by summing up all the scores, just return the total points",
