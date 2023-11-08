@@ -15,7 +15,7 @@ __Which are:__
 
 Based on these evaluations, it provides an overall score to determine if a candidate is the right fit for the company.
 
-AI-Powered Talent Dashboard Report, evaluate the candidate resume based on five aspects to determine if they are the right fit for the company, and then decide whether to proceed with the interview.
+AI-Powered Talent Dashboard Report, evaluate the candidate resume based on five aspects to determine if they are the right fit for the company, and then decide whether to proceed with the interview. Code : [https://github.com/junsiong2008/innotalent-frontend](https://github.com/junsiong2008/innotalent-frontend)
 
 
 ![Flow](https://github.com/LeeChongKeat/API_InnoTalent_Engine/blob/main/ReadMeImg/api-flow.png)
