@@ -1,5 +1,15 @@
-# API_InnoTalent_Engine
+# API InnoTalent Engine
 
+## Table of Contents
+1. [Background](#background)
+2. [Features](#features)
+3. [Business Model](#business-model)
+4. [Benefits](#benefits)
+5. [How it Works](#how-it-works)
+6. [Get Started](#get-started)
+
+
+## Background
 **AI-Powered Talent Dashboard**
 
 API_InnoTalent_Engine is a sophisticated API designed to streamline the hiring process for companies. By integrating five AI models, including one from **OpenAI** and **four custom AI models**, this API evaluates candidate resumes in PDF format. 
@@ -26,6 +36,21 @@ AI-Powered Talent Dashboard Report, evaluate the candidate resume based on five 
 - **Predictive Insights**: Predicts future resignation intention, return on work, working performance, and expected salary based on the candidate's resume.
 - **Efficient Screening**: Helps companies filter resumes effectively, enabling them to focus on candidates who are more likely to succeed in the organization.
 - **Time-Saving**: By automating the initial evaluation process, it saves valuable time for HR professionals, allowing them to focus on interviewing potential candidates.
+
+## Business Model 
+InnoTalent Engine offers a pioneering and  first-to-market solution for the HR hiring process.
+It provides a customer-fit dashboard for HR to conduct a comprehensive 360° analysis and generate actionable insights for HR to hire the right talent. 
+InnoTalent allows the customization of parameters based on company policies to pinpoint the right talent.
+
+### Free Features for Everyone:
+1) Companies can freely use InnoTalent to analyze talent resumes.
+
+### Premium Users:
+2) Access to detailed job history, records, and provisional job data of the talent.
+
+### How it make Money:
+1) Premium User Subscriptions
+2) Utilization of Talent Data to train and improve our AI model, continuously enhancing accuracy and effectiveness.
 
 
 ## How it Works
